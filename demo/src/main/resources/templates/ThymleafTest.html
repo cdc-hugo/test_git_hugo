@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div th:utext="${cent}">skr</div>
+<table>
+    <tr th:each="bk,count:${list}">
+        <td th:text="${count.count}"></td>
+        <td th:text="${bk}"></td>
+    </tr>
+</table>
+<a href="https://www.baidu.com" th:href="test/test03"></a>
+<a href="https://www.baidu.com" th:href="test/test04"></a>
+</body>
+</html>
